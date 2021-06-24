@@ -1,3 +1,7 @@
 .fontsize-16{
     font-size: 16pt;
 }
+
+a{
+    cursor: pointer;
+}
