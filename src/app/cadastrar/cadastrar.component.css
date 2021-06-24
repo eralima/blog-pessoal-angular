@@ -1,0 +1,9 @@
+#img-bg{
+    background-image: url(https://image.freepik.com/free-photo/office-table-with-laptop-computer-notebook-digital-tablet-smartphone-white-background_67092-181.jpg);
+
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
