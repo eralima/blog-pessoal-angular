@@ -1,1 +1,84 @@
-<p>inicio works!</p>
+<div class="container-fluid bg-secondary">
+    <div class="row d-flex align-items-center">
+        <div class="col-md-6">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-md-6 text-white">
+                    <h1 class="fs-54">Seja bem vinde</h1>
+                    <h5 class="fs-18">expresse aqui os seus pensamentos e opiniões</h5>
+                </div>
+
+                <div class="row d-flex justify-content-center mt-3 mb-5">
+                    <div class="col-md-6">
+                        <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#novaPostagem">nova postagem</button>
+                        <a class="btn btn-outline-light"href="#postagens">ver postagens</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+            <img src="../../assets/img/Conversation.png" alt="" width="500px" height="500px">
+        </div>
+
+    </div>
+</div>
+
+<div class="container mb-5 mt-3" id="postagens">
+    <ul class="nav nav-tabs d-flex justify-content-center mt-5 mb-5" id="myTab" role="tablist">
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active text-secondary font-weight-bold" id="todasPostagens-tab" data-bs-toggle="tab" data-bs-target="#todasPostagens" type="button" role="tab" aria-controls="todasPostagens" aria-selected="true">todas as postagens</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-secondary font-weight-bold" id="minhasPostagens-tab" data-bs-toggle="tab" data-bs-target="#minhasPostagens" type="button" role="tab" aria-controls="minhasPostagens" aria-selected="false">minhas postagens</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-secondary font-weight-bold" id="postagensTema-tab" data-bs-toggle="tab" data-bs-target="#postagensTema" type="button" role="tab" aria-controls="postagensTema" aria-selected="false">postagens por tema</button>
+        </li>
+
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="todasPostagens-tab">todas postagens</div>
+        <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="minhasPostagens-tab">minhas postagens</div>
+        <div class="tab-pane fade" id="postagensTema" role="tabpanel" aria-labelledby="postagensTema-tab">postagens por tema</div>
+      </div>
+</div>
+
+
+  <div class="modal fade" id="novaPostagem" tabindex="-1" aria-labelledby="novaPostagemLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="novaPostagemLabel">nova postagem</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-group mb-3">
+            <input type="text" class="form-control" id="titulo" placeholder="título">
+          </div>
+
+          <div class="form-group mb-3">
+            <textarea class="form-control" name="texto" id="texto" rows="3" placeholder="texto"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="text">escolha um tema ou <a href="">cadastra um novo</a>: </label>
+            <select class="form-control"  name="tema" id="tema">
+              <option value="">temas</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-bs-dismiss="modal">publicar</button>
+          <button type="button" class="btn">cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>

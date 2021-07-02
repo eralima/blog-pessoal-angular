@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
 #img-bg{
     background-image: url(https://image.freepik.com/free-photo/office-table-with-laptop-computer-notebook-digital-tablet-smartphone-white-background_67092-181.jpg);
 
@@ -8,18 +15,7 @@
     background-size: cover;
 }
 
-.form-control{
-    outline: 0;
-    border-width: 0 0 1.8px;
-    border-color: rgba(0,0,0,.5);
-
-    padding: 12px 15px; /* topo | direita | inferior | esquerda */
-    margin: 8px 0;
-
-    font-size: 15px;   
+h1{
+    text-transform: uppercase;
+    font-size: 16px;
 }
-
-.form-control:focus{
-    box-shadow:none;
-}
-
