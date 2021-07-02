@@ -12,10 +12,10 @@
             <div class="row d-flex justify-content-center mt-4 mb-5">
                 <div class="col-md-3">
                     <div class="form-group">
-                        <input class="form-control mb-4" id="descricao" type="text" id="descricao" placeholder="digite a descrição do tema">
+                        <input [(ngModel)] = 'tema.descricao' class="form-control mb-4" id="descricao" type="text" id="descricao" placeholder="digite a descrição do tema">
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button class="btn btn-light">cadastrar</button>
+                        <button class="btn btn-light" (click) = 'cadastrarTema()'>cadastrar</button>
                     </div>
                 </div>
             </div>
@@ -38,29 +38,19 @@
                 <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">descrição</th>
+                      <th scope="col" class="text-center">modificações</th>
                     </tr>
                   </thead>
 
                   <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
+                    <tr *ngFor = 'let item of listaTemas'>
+                      <th>{{item.id}}</th>
+                      <td>{{item.descricao}}</td>
+                      <td class="d-flex justify-content-center">
+                          <button class="btn btn-info me-3">editar</button>
+                          <button class="btn btn-danger">apagar</button>
+                      </td>
                     </tr>
                   </tbody>
 
