@@ -12,6 +12,8 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
 import { TemaComponent } from './tema/tema.component';
+import { TemaEdicaoComponent } from './edicao/tema-edicao/tema-edicao.component';
+import { TemaExcluirComponent } from './excluir/tema-excluir/tema-excluir.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { TemaComponent } from './tema/tema.component';
     EntrarComponent,
     CadastrarComponent,
     InicioComponent,
-    TemaComponent
+    TemaComponent,
+    TemaEdicaoComponent,
+    TemaExcluirComponent
   ],
   imports: [
     BrowserModule,
